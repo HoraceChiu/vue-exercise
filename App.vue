@@ -17,7 +17,7 @@ export default {
   data() {
     return {
       name: "BootstrapVue",
-      show: true,
+      show: false,
       msg: ""
     };
   },
@@ -44,7 +44,7 @@ export default {
       return (this.show ? "Hide" : "Show") + "    Alert";
     },
     getAlertText() {
-      return "Hello " + this.name + " !" + this.msg;
+      return "Hello " + this.name + " !" + this.msg + this.message;
     }
   }
 };
