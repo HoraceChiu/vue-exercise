@@ -11,18 +11,18 @@
 </template>
 
 <script>
-import App from "./App";
+import App from './components/App'
 export default {
-  data() {
+  data () {
     return {
-      topMsg: "",
-      name: "myApp",
+      topMsg: '',
+      name: 'myApp',
       show: true,
       list: [1, 2, 3, 4, 5, 6]
-    };
+    }
   },
   components: {
     App: App
   }
-};
+}
 </script>
