@@ -1,11 +1,9 @@
 <template>
   <div>
     <p>
-      <b-input v-model="topMsg"/>
+      <b-input v-model="topMsg" placeholder="父级输入框内容"/>
     </p>
-    <App :message="topMsg"></App>
-    <App></App>
-    <App></App>
+    <App v-for="(item,index) in list" :key="index" v-bind:index="item" v-bind:message="topMsg"></App>
   </div>
 </template>
 
@@ -16,7 +14,8 @@ export default {
     return {
       topMsg: "",
       name: "myApp",
-      show: true
+      show: true,
+      list: [1, 2, 3, 4, 5, 6]
     };
   },
   components: {
