@@ -3,7 +3,10 @@
     <p>
       <b-input v-model="topMsg" placeholder="父级输入框内容"/>
     </p>
+
     <App v-for="(item,index) in list" :key="index" v-bind:index="item" v-bind:message="topMsg"></App>
+    <!-- <App v-bind:message="topMsg"></App>
+    <App v-bind:message="topMsg"></App>-->
   </div>
 </template>
 

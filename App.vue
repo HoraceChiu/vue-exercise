@@ -17,7 +17,7 @@ export default {
   data() {
     return {
       name: "BootstrapVue",
-      show: false,
+      show: true,
       msg: ""
     };
   },
@@ -45,7 +45,7 @@ export default {
       return (this.show ? "Hide" : "Show") + "    Alert";
     },
     getAlertText() {
-      return "Hello " + this.name + " !" + this.msg + this.message;
+      return "Hello " + this.name + " !" + this.message + this.msg;
     },
     getInputPlaceHolder() {
       return "子级" + this.index + "输入框";
