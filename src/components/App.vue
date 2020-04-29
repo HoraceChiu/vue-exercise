@@ -48,7 +48,7 @@ export default {
       return 'Hello ' + this.name + '!' + this.msg + this.message
     },
     getInputPlaceHolder () {
-      return '子级' + this.index + '输入框xx'
+      return '子级' + this.index + '输入框'
     }
   }
 }

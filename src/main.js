@@ -4,7 +4,7 @@ import App from './myApp'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-
+// 使用插件
 Vue.use(BootstrapVue)
 Vue.use(BootstrapVueIcons)
 
