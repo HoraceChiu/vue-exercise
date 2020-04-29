@@ -45,7 +45,7 @@ export default {
       return (this.show ? "Hide" : "Show") + "    Alert";
     },
     getAlertText() {
-      return "Hello " + this.name + " !" + this.message + this.msg;
+      return "Hello " + this.name + " !" + this.msg + this.message;
     },
     getInputPlaceHolder() {
       return "子级" + this.index + "输入框";
