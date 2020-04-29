@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-button size="sm" @click="toggle">{{getAlertButtonMessage}}</b-button>
-    <b-input v-model="msg"/>
+    <b-input v-model="msg" v-bind:placeholder="getInputPlaceHolder"/>
     <b-alert v-model="show" class="mt-3" dismissible @dismissed="dismissed">{{getAlertText}}</b-alert>
   </div>
 </template>
@@ -22,7 +22,8 @@ export default {
     };
   },
   props: {
-    message: ""
+    message: "",
+    index: ""
   },
   watch: {
     show(newVal) {
@@ -44,7 +45,10 @@ export default {
       return (this.show ? "Hide" : "Show") + "    Alert";
     },
     getAlertText() {
-      return "Hello " + this.name + " !" + this.msg;
+      return "Hello " + this.name + " !" + this.msg + this.message;
+    },
+    getInputPlaceHolder() {
+      return "子级" + this.index + "输入框";
     }
   }
 };
